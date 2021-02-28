@@ -8,7 +8,7 @@ GENERAL_TWEAKS = -ffast-math
 FLAGS = -g -DDESKTOP -DTRNGAJE_OGS $(GENERAL_TWEAKS)
 SDL = `sdl2-config --cflags`
 
-SPARROW_FOLDER = ../sparrow3d
+SPARROW_FOLDER = ../sparrow3d-sdl2-ogs
 
 SPARROW3D_LIB = libsparrow3d.so
 SPARROWNET_LIB = libsparrowNet.so
