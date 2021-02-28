@@ -54,7 +54,7 @@ void draw_menu()
 		pos+=font->maxheight;
 		item = item->next;
 	}
-	spFontDrawMiddle(screen->w*MENU_WIDTH,screen->h/4+(2+menu_count)*font->maxheight/2,0,"[o]Choose    [c]Back",font);
+	spFontDrawMiddle(screen->w*MENU_WIDTH,screen->h/4+(2+menu_count)*font->maxheight/2,0,"(A) Choose    (B) Back",font);
 	spFlip();
 }
 

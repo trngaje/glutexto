@@ -102,11 +102,11 @@ void draw_dialog()
 	{
 		case 0:
 			spFontDrawMiddle(screen->w/2,0,0,"Choose file to load",font);
-			spFontDrawMiddle(screen->w/2,screen->h-font->maxheight,0,"[o]Choose [f]ile or enter [d]irectory    [c]Cancel",font);
+			spFontDrawMiddle(screen->w/2,screen->h-font->maxheight,0,"(A) Choose [f]ile or enter [d]irectory    (B) Cancel",font);
 			break;
 		case 1:
 			spFontDrawMiddle(screen->w/2,0,0,"Choose file/location to save",font);
-			spFontDrawMiddle(screen->w/2,screen->h-font->maxheight,0,"[o]Choose [f]ile/[d]irectory   [3]New file   [c]Cancel",font);
+			spFontDrawMiddle(screen->w/2,screen->h-font->maxheight,0,"(A) Choose [f]ile/[d]irectory   (X) New file   (B) Cancel",font);
 			break;
 	}
 	char buffer[256];

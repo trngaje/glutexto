@@ -279,21 +279,23 @@ void draw_without_flip( void )
 
 	if (!spIsKeyboardPolled())
 	{
-		spFontDrawMiddle(screen->w/2,0,0,"[M]Main",font);
-		spFontDrawRight(screen->w,0,0,"[S]Options",font);
+		spFontDrawMiddle(screen->w/2,0,0,"(F1) Main",font);
+		spFontDrawRight(screen->w,0,0,"(F2) Options",font);
 		spFontDrawMiddle(screen->w/2,screen->h-font->maxheight,0,\
-			"[o]Enter text   "\
-			"[3]Load   "\
-			"[4]Save",font);
+			"(F1) Menu   "\
+			"(A) Enter text   "\
+			"(X) Load   "\
+			"(Y) Save   "\
+			"(F2) Option",font);
 	}
 	else
 		spFontDrawMiddle(screen->w/2,screen->h-font->maxheight,0,\
-			"[o]Letter  "\
-			"[4]Done  "\
-			"[M]Return  "\
-			"[3]Space  "\
-			"[l]\t  "\
-			"[c]<-",font);
+			"(A) Letter  "\
+			"(Y) Done  "\
+			"(R1) Return  "\
+			"(X) Space  "\
+			"(L1) \t  "\
+			"(B) <-",font);
 }
 
 void draw()

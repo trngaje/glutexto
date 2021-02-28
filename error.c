@@ -63,7 +63,7 @@ void draw_string()
 	spRectangle(screen->w/2,screen->h/2,0,screen->w*3/4,(height)*font->maxheight,BACKGROUND_COLOR);
 	spFontDrawMiddle(screen->w/2,screen->h/2-(height)*font->maxheight/2,0,string_message,font);
 	spFontDrawMiddle(screen->w/2,screen->h/2+(height-6)*font->maxheight/2,0,string_buffer,font);
-	spFontDrawMiddle(screen->w/2,screen->h/2+(height-2)*font->maxheight/2,0,"[o]Enter letter    [3]Ok    [c]Cancel",font);
+	spFontDrawMiddle(screen->w/2,screen->h/2+(height-2)*font->maxheight/2,0,"(A) Enter letter    (X) Ok    (B) Cancel",font);
 	if (spIsKeyboardPolled() && spGetVirtualKeyboardState() == SP_VIRTUAL_KEYBOARD_ALWAYS)
 		spBlitSurface(screen->w/2,screen->h-spGetVirtualKeyboard()->h/2-font->maxheight,0,spGetVirtualKeyboard());
 	spFlip();	
